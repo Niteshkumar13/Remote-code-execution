@@ -2,7 +2,7 @@
     "routes": [
         {
               "src": "/frontend/(.*)",
-              "dest": "/frontend/", 
+              "dest": "/", 
               "status": 200
         }
     ]
