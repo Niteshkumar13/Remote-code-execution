@@ -15,7 +15,7 @@ const Editors = () => {
       setLan({...lan,snippet:t})
     }, [lan.language])
   return (
-    <div className='w-[70%]  h-full border-r-[1px] '>
+    <div className='w-[70%]  h-full border-r-[1px] max-sm:w-screen max-sm:h-1/2'>
     <Editor
       height="100%" 
       theme={allTheme.body != "white" ? "vs-dark" : "light"}
