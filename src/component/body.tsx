@@ -21,7 +21,7 @@ const Body = () => {
       </div>
       <div className=' h-[calc(100vh-6.3rem)] w-screen flex'>
         <Editors />
-        <div className=' w-1/2  h-full' style={{ backgroundColor: allTheme.body, color: allTheme.textColor }}></div>
+        <div className=' w-1/2  h-full max-sm:w-screen max-sm:h-1/2' style={{ backgroundColor: allTheme.body, color: allTheme.textColor }}></div>
       </div>
     </div>
   )
