@@ -8,7 +8,7 @@ const Slider = () => {
     const {allTheme} = useTheme();
     const x = new Array(5).fill('')
     return (
-        <div className='absolute w-[300px] bg-slate-600 h-[calc(100vh-100px)] z-[1] left-0 top-[100px] rounded-tr-md border-r-2' style={{backgroundColor:`${allTheme.slider}`}}>
+        <div className='absolute w-[300px] bg-slate-600 h-[calc(100vh-100px)] z-[1] left-0 top-[100px] rounded-tr-md border-r-2 slider-for-animation' style={{backgroundColor:`${allTheme.slider}`}}>
             <div className='h-[calc(100%-130px)] w-full grid gap-[3px]  justify-center overflow-y-auto'>
                <div> {x.map(()=>(
                     <div className='flex justify-between w-[280px] rounded-md border-2 h-10 bg-darkHover items-center pl-2 pr-2 mt-1'>
