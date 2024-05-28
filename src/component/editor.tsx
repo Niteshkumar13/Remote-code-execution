@@ -15,12 +15,16 @@ const Editors = () => {
       setLan({...lan,snippet:t})
     }, [lan.language])
   return (
-    <div className='w-[70%]  h-full border-r-[1px] max-sm:w-screen max-sm:h-1/2'>
+    <div className='w-[70%] max-md:w-screen max-md:h-1/2  h-full border-r-[1px] '>
     <Editor
       height="100%" 
       theme={allTheme.body != "white" ? "vs-dark" : "light"}
       width="100%"
-
+      options={{
+        minimap: {
+          enabled: false,
+        },
+      }}
       defaultLanguage={lan.language}
       language={lan.language}
       defaultValue={lan.snippet}
