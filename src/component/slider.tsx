@@ -8,8 +8,8 @@ const Slider = () => {
     const {allTheme} = useTheme();
     const x = new Array(5).fill('')
     return (
-        <div className='absolute w-[300px] bg-slate-600 h-[calc(100vh-100.5px)] z-[1] left-0 top-[100px] rounded-tr-md border-r-2' style={{backgroundColor:`${allTheme.slider}`}}>
-            <div className='h-[77%] w-full border-2 grid gap-[3px]  justify-center overflow-y-auto'>
+        <div className='absolute w-[300px] bg-slate-600 h-[calc(100vh-100px)] z-[1] left-0 top-[100px] rounded-tr-md border-r-2' style={{backgroundColor:`${allTheme.slider}`}}>
+            <div className='h-[calc(100%-130px)] w-full grid gap-[3px]  justify-center overflow-y-auto'>
                <div> {x.map(()=>(
                     <div className='flex justify-between w-[280px] rounded-md border-2 h-10 bg-darkHover items-center pl-2 pr-2 mt-1'>
                         <FaFileArrowUp size={23}/>
@@ -22,11 +22,11 @@ const Slider = () => {
                 ))}
                 </div>
             </div>
-            <div className='w-full pl-2 pr-2 grid gap-[1px]'>
-                <label htmlFor='file-input'  className='border-2 rounded-md w-full flex p-2 text-[17px] gap-1 items-center' style={{ backgroundColor: '#4ade80' }}><FaFileArrowUp size={27}/> Open FIle</label>
+            <div className='w-full pl-2 pr-2 h-[130px]'>
+                <label htmlFor='file-input'  className='border-2 p-[6px] rounded-md w-full flex text-[17px] gap-1 items-center ' style={{ backgroundColor: '#4ade80' }}><FaFileArrowUp size={27}/> Open FIle</label>
                 <input type='file' id="file-input" className='hidden'/>
-                <label className='border-2 rounded-md w-full flex p-2 text-[17px] gap-1 items-center' style={{ backgroundColor: '#4ade80' }}><MdOutlineFileDownload size={27}/> Download File</label>
-                <button className='border-2 rounded-md w-full p-2 text-center text-[17px]' style={{ backgroundColor: '#4ade80' }}>New File</button>
+                <label className='border-2 rounded-md w-full flex text-[17px] gap-1 items-center p-[6px]' style={{ backgroundColor: '#4ade80' }}><MdOutlineFileDownload size={27}/> Download File</label>
+                <button className='border-2 rounded-md w-full  text-center text-[17px] p-[6px]' style={{ backgroundColor: '#4ade80' }}>New File</button>
             </div>
         </div>
     )
