@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slider-for-animation {
+    animation-name: slider;
+    animation-duration: 0.28s;
+}
+
+@keyframes slider {
+    0% {
+        left: -320px
+    }
+
+    25% {
+        left: -240px
+    }
+
+    50% {
+        left: -160px;
+    }
+
+    75% {
+        left: -80px;
+    }
+
+    100% {
+        left: 0
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
