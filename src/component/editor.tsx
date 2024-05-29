@@ -2,7 +2,6 @@ import React,{useRef,useEffect} from 'react';
 import { Editor} from '@monaco-editor/react';
 import { useTheme } from '../context/themeContext';
 import { useLanguage,def_code } from '../context/selectLanguage'
-import { language } from '../interfaces/interface';
 const Editors = () => {
     const { lan,setLan} = useLanguage()
     const { allTheme } = useTheme();
