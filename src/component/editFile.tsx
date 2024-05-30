@@ -21,7 +21,7 @@ const EditFile = ({name,setEdit}:Props) => {
 }
     return (
         <div>
-            <input type='text' value={names} onChange={e => Setname(e.target.value)} />
+            <input type='text' value={names} onChange={e => Setname(e.target.value)} className='width-[70%]'/>
             <span>
                 <button onClick={handleConfirm}><FaCheck size={18} /></button>
                 <button onClick={e => setEdit(null)}><IoClose size={22} /></button>
