@@ -20,7 +20,7 @@ const EditFile = ({name,setEdit}:Props) => {
     }
 }
     return (
-        <div>
+        <div className='w-full flex justify-between px-1 border-2'>
             <input type='text' value={names} onChange={e => Setname(e.target.value)} className='width-[70%]'/>
             <span>
                 <button onClick={handleConfirm}><FaCheck size={18} /></button>
